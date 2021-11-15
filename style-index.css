@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: coco;
-  src: url(Cocogoose.ttf);
+  font-family: cocogoose;
+  url: (C);
 }
 
 .gray-line {
@@ -120,14 +120,15 @@
 
 .title {
   color: #ec5242;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 22px;
   margin-bottom: 15px;
 }
 
 .coco {
-  font-family: coco;
+  font-family: cocogoose;
   color: #ec5242;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 50px;
   margin-bottom: 20px;
 }
@@ -143,7 +144,7 @@
 .year {
   font-family: coco;  
   font-size: 35px;
-  color: #d3d3d3;
+  color: #636161;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -193,6 +194,7 @@
   margin-top: 80px;
   font-weight: 900;
 }
+
 .cards {
   width: 40%;
   height: 35vh;
@@ -207,8 +209,9 @@
 .cards:hover {
   border: 5px solid #fff;
 }
+
 .cards img {
-  width: 60px;
+  width: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
