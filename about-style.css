@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  @font-face {
+    font-family: coco;
+    src: url(Cocogoose.ttf);
+  }
+  
+  .gray-line {
+    background: #3e3e3e;
+    height: 4vh;
+  }
+  
+  .gray-line img {
+    width: 25px;
+  }
+  
+  .first-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 17%;
+    padding-top: 5px;
+  }
+  
+  .first-menu a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .first-menu a:hover {
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    height: 13vh;
+    padding-right: 17%;
+    border-bottom: 1px solid gray;
+  }
+  
+  .second-menu {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .second-menu a {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #272a27;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  
+  .second-menu a:hover {
+    color: #ec5242;
+    font-weight: bold;
+  }
+  
+  .red li {
+    width: 150px;  
+    height: 5vh;
+    border: 6px solid #ec5242;
+    color: #ec5242;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .js-logo { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-top: 20px;
+  }
+  
+  .js-logo img {
+    width: 75px;
+  }
