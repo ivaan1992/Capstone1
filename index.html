@@ -13,7 +13,40 @@
 <body>
  <div class="content">
     <header>
-        <nav class="gray-line">
+        <nav class="hamburger-menu">
+            <a href="" class="mobile-menu-button">
+              <img src="Images/hamburger-menu.svg" alt="mobile-menu">
+            </a>
+            <a href="" class="xIcon">
+              <span>X</span>
+            </a>
+        </nav> 
+        <nav class="cont-menu hide-desktop">   
+            <ul class="mobile-menu">
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="">
+                  <li>Program</li>
+                </a>
+                <a href="">  
+                  <li>Join</li>
+                </a>  
+                <a href="">
+                  <li>Sponsor</li>
+                </a>
+                <a href="" class="news">
+                  <li>News</li>
+                </a>
+                <a href="">
+                  <li>CC Campaign</li>
+                </a>    
+            </ul>
+        </nav>
+        <nav class="gray-line hide-mobile">
             <ul class="first-menu">
               <a href="">
                 <li>
@@ -36,7 +69,7 @@
               </a>  
             </ul>
         </nav>
-        <nav class="menu">
+        <nav class="menu hide-mobile">
             <div class="js-logo">
                 <a href="index.html">
                   <img src="Images/js-logo.png" alt="logo">
@@ -65,7 +98,7 @@
         </nav>
     </header>
     <main>
-        <section class="headline">
+        <section class="headline hide-mobile">
             <div class="text">
               <p class="title">International JavaScript conference</p>
               <h1 class="coco">Global Conference Series for Fullstack JS Development 2021</h1>
@@ -80,7 +113,7 @@
             </div>  
             <div class="background"></div>  
         </section>
-        <section class="program">
+        <section class="program hide-mobile">
             <h2 class="program-title-section">Main Program</h2>
             <div class="red-line"></div>
              <div class="card-content">    
@@ -126,8 +159,12 @@
              </div>  
                    
         </section>
-        <section class="speakers">
+        <section class="speakers hide-mobile">
+            <h2 class="section-title">Feature Speakers</h2>
+            <div class="redLine"></div>
+            <div class="speaker-info">
 
+            </div>
         </section>
     </main>
  </div>    
