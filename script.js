@@ -1,11 +1,11 @@
 // Mobile menu
 const menu = document.querySelector('.cont-menu');
-const hamburger = document.querySelector('.hamburger-menu');
+const hamburger = document.querySelector('.mobile-menu-button');
 const xIcon = document.querySelector('.xIcon');
 
 function toggleMenu() {
-    if (menu.classList.remove('showMenu')) {
-        menu.classList.contains('showMenu');
+    if (menu.classList.contains('showMenu')) {
+        menu.classList.remove('showMenu');
         xIcon.style.display = 'none';
     } else {
         menu.classList.add('showMenu');
