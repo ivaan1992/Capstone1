@@ -12,7 +12,10 @@
   
   .gray-line {
     background: #3e3e3e;
-    height: 4vh;
+    height: 6vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
   
   .gray-line img {
@@ -24,8 +27,7 @@
     list-style-type: none;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 17%;
-    padding-top: 5px;
+    padding-right: 16%;
   }
   
   .first-menu a {
@@ -41,9 +43,9 @@
   
   .menu {
     display: flex;
-    height: 13vh;
+    height: 10vh;
     padding-right: 17%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #d3d3d3;
   }
   
   .second-menu {
@@ -51,7 +53,6 @@
     display: flex;
     list-style-type: none;
     align-items: center;
-    justify-content: space-between;
   }
   
   .second-menu a {
@@ -71,7 +72,7 @@
   
   .red li {
     width: 150px;  
-    height: 5vh;
+    height: 8vh;
     border: 6px solid #ec5242;
     color: #ec5242;
     font-weight: 900;
@@ -86,11 +87,27 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-top: 20px;
+    height: 7vh;
+    padding-top: 10px;
   }
   
   .js-logo img {
-    width: 75px;
+    width: 100%;
+    height: 7vh;
+  }
+
+  .headline {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background {
+    background-image: url("Images/js-eating.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
   }
