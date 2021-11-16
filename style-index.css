@@ -354,7 +354,7 @@
    .partner {
      width: 100%;
      background-color: #414246;
-     height: 30vh;
+     height: 31vh;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -362,11 +362,29 @@
    }
 
    .partner-title {
-     width: 50%;
-     color: red;
+     margin-top: 30px;
+     width: 10%;
+     color: #a2a2a4;
      text-align: center;
-     border: 3px solid black;
+     font-size: 30px;
   }
 
+  .Line {
+    border-top: 3px solid #ec5242;
+    width: 40px;
+    margin-top: 10px;
+  }
 
+  .logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .logos img {
+    width: 120px;
+    height: 15vh;
+    margin-right: 50px;
+  }
 }
