@@ -145,7 +145,7 @@
     linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
     background-color: #131313;
     background-size: 20px 20px;
-    height: 135vh;
+    height: 120vh;
   }
   
   .program-title-section {
@@ -225,7 +225,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    margin-top: 70%;
+    margin-top: 100%;
   }
 
   .section-title {
@@ -235,31 +235,27 @@
 
   .redLine {
     border-top: 4px solid #ec5242;
-    width: 4%;
+    width: 10%;
     height: 5vh;
     margin-top: 15px;
     margin-left: 48%;
+    padding-bottom: 10%;
   } 
 
-  .speaker-info {
-    display: flex;
-  }
-
-  .speaker-info img {
-    
-  }
-
-  .speaker-info a {
-    text-decoration: none;
-    color: #272a31;
-  }
-
-  .bio {
+  .speakers-info {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 40vh;
-    margin-left: 2%;
+    margin-left: 20px;
+  }
+
+  .speakerss {
+    display: flex;
+    border: 3px solid red;
+  }
+
+  .speakerss img {
+    width: 23vh;
+    height: 23vh;
   }
 
   .speaker-name {
@@ -268,7 +264,7 @@
   }
 
   .italik-red {
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
     font-weight: 800;
     color: #ec5242;
@@ -278,12 +274,9 @@
   .about {
     font-size: 12px;
     text-align: justify;
-    width: 100%;
+    width: 80%;
     height: 25vh;
   }
-
-
-
 }
 
 
@@ -541,28 +534,19 @@
      margin-left: 48%;
    } 
 
-   .speaker-info {
-     display: flex;
-     height: 36vh;
-     width: 94%;
-   }
-
-   .speaker-info img {
-     width: 23vh;
-     height: 23vh;
-   }
-
-   .speaker-info a {
-     text-decoration: none;
-     color: #272a31;
-   }
-
-   .bio {
+   .speakers-info {
      display: flex;
      flex-direction: column;
-     width: 90%;
-     height: 40vh;
-     margin-left: 2%;
+     margin-left: 20px;
+   }
+
+   .speakerss {
+     display: flex;
+   }
+
+   .speakerss img {
+     width: 23vh;
+     height: 23vh;
    }
 
    .speaker-name {
@@ -571,7 +555,7 @@
    }
 
    .italik-red {
-     font-size: 10px;
+     font-size: 12px;
      font-style: italic;
      font-weight: 800;
      color: #ec5242;
@@ -581,7 +565,7 @@
    .about {
      font-size: 12px;
      text-align: justify;
-     width: 100%;
+     width: 80%;
      height: 25vh;
    }
 
