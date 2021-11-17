@@ -1,15 +1,21 @@
-*{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
   }
   
-  @font-face {
-    font-family: coco;
-    src: url(Cocogoose.ttf);
+@font-face {
+  font-family: Cocogoose;
+  src: url(COCOGOOSE/Cocogoose_trial.otf);
   }
   
+/*Desktop Version*/
+@media(min-width:1025px) {
+  .hide-mobile {
+    display: none;
+  }
+
   .gray-line {
     background: #3e3e3e;
     height: 6vh;
@@ -104,16 +110,164 @@
 
   .headline {
     width: 100%;
-    height: 90vh;
+    height: 78vh;
     display: flex;
     flex-direction: column;
   }
 
   .background {
-    background-image: url("Images/js-eating.jpeg");
+    background-image: url("Images/conference.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: 100vh;
     opacity: 0.2;
   }
+
+  .principal-text {
+    width: 51%;
+    height: 64vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25%;
+  }
+
+  .coco {
+    font-family: Cocogoose;
+    color: #ec5242;
+    font-weight: 900;
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .info {
+    width: 58%;
+    border: 1px solid ;
+    line-height: 25px;
+    background: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+  }
+
+  .logo-title {
+    padding-top: 1%;
+    padding-bottom: 15px;
+  }
+
+  .logo-info {
+    width: 34%;
+    line-height: 26px;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 100px;
+  }
+
+  .logo img {
+    width: 270px;
+    border: 1px solid #d3d3d3;
+  }
+
+  .red-line {
+    width: 3%;
+    border-top: 2px solid #ec5242;
+    padding-bottom: 30px;
+  }
+
+  .pictures {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+  }
+
+  .pictures h2 {
+    padding-bottom: 20px;
+    padding-top: 5%;
+  }
+
+  .pictures p {
+    font-size: 15px;
+  }
+
+  .images-content {
+    display: flex;
+  }
+  .images-content figure {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 15px 25px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
+  .images-content figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+  }
+
+  .images-content figure .first-image-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(189, 77, 77, 0.938);
+    transition: all 500ms ease-out;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+  }
+
+  .images-content figure:hover > .first-image-text {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .images-content figure .second-image-text {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(189, 77, 77, 0.938);
+    transition: all 500ms ease-out;
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+  }
+
+  .images-content figure:hover > .second-image-text {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+  

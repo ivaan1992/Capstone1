@@ -71,17 +71,3 @@ Speakers.forEach((item) => {
     <button type="button" class="seeMore hide-desktop">${item.button}</button>
 `;
 });
-
-showMore.addEventListener('click', (e) => {
-    e.preventDefault();
-    const speakersContainer = document.querySelector('.speakers .speaker-info');
-    if(!showMore.classList.contains('less')) {
-        showMore.classList.add('less');
-        speakersContainer.style.maxHeight = 'unset';
-        showMore.innerText = 'Show Less';
-      } else {
-        showMore.classList.remove('less');
-        speakersContainer.style = '';
-        showMore.innerText = 'Show More';
-    }
-});

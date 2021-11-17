@@ -289,11 +289,7 @@
   }
 }
 
-
-
-
 /*Desktop Version*/
-
 
 @media (min-width: 1025px) {
   .hide-desktop {
@@ -408,7 +404,7 @@
    }
    
    .text {
-     width: 29%;
+     width: 50%;
      height: 42vh;
      position: absolute;
      margin-left: 20%;
@@ -433,11 +429,12 @@
    }
    
    .info {
-     width: 100%;
+     width: 60%;
      border: 3px solid  ;
      line-height: 25px;
      background: #f7f7f7;
      margin-bottom: 20px;
+     font-size: 15px;
    }
    
    .year {
