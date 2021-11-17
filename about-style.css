@@ -82,6 +82,12 @@
     justify-content: center;
     list-style-type: none;
   }
+
+  .red li:hover {
+    color: #272a31;
+    font-weight: 900;
+    border: 6px solid #272a31;
+  }
   
   .js-logo { 
     width: 100%;

@@ -15,7 +15,7 @@ function toggleMenu() {
 
 hamburger.addEventListener('click', toggleMenu);
 
-/*// Speakers
+// Speakers
 const featuredSpeakers = document.getElementById('speakers');
 const Speakers = [
     {
@@ -53,13 +53,14 @@ const Speakers = [
         company: 'Avaloq, Luxembourg',
         image: './Images/speaker6.jpg',
         bio: 'Frontend developer at Avaloq. Founder of the SkillUp school in Luxembourg. Teacher, speaker, rescue diver, mother of a ginger cat. Loves beautiful visual effects on websites, responsive markup, video games and travel.',
+        button: 'See More'
     },
 ];
 
 Speakers.forEach((item) => {
     featuredSpeakers.innerHTML += `
 
-    <div class="speakerss">
+    <div class="speaker-info">
         <img src="${item.image}"
     </div>     
     <div class="speakers-info">
@@ -67,12 +68,13 @@ Speakers.forEach((item) => {
         <p class="italik-red">${item.company}</p>
         <p class="about">${item.bio}</p>
     </div>    
+    <button type="button" class="seeMore hide-desktop">${item.button}</button>
 `;
-});*/
+});
 
 showMore.addEventListener('click', (e) => {
     e.preventDefault();
-    const speakersContainer = document.querySelector('.speakers .card-container');
+    const speakersContainer = document.querySelector('.speakers .speaker-info');
     if(!showMore.classList.contains('less')) {
         showMore.classList.add('less');
         speakersContainer.style.maxHeight = 'unset';
