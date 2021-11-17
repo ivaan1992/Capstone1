@@ -68,6 +68,5 @@ Speakers.forEach((item) => {
         <p class="italik-red">${item.company}</p>
         <p class="about">${item.bio}</p>
     </div>    
-    <button type="button" class="seeMore hide-desktop">${item.button}</button>
 `;
 });

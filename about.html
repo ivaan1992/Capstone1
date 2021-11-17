@@ -13,7 +13,40 @@
 <body>
  <div class="content">
     <header>
-        <nav class="gray-line">
+      <nav class="hamburger-menu hide-desktop">
+        <button class="mobile-menu-button">
+          <img src="Images/hamburger-menu.svg" alt="mobile-menu">
+        </button>
+        <nav class="cont-menu hide-desktop"> 
+          <ul>
+              <a href="index.html">
+                  <li>Home</li>
+              </a>
+              <a href="about.html">
+                  <li>About</li>
+              </a>
+              <a href="">
+                <li>Program</li>
+              </a>
+              <a href="">  
+                <li>Join</li>
+              </a>  
+              <a href="">
+                <li>Sponsor</li>
+              </a>
+              <a href="" class="news">
+                <li>News</li>
+              </a>
+              <a href="">
+                <li>CC Campaign</li>
+              </a>    
+          </ul>
+          <a href="" class="xIcon">
+              <span>X</span>
+          </a>  
+        </nav>
+    </nav> 
+        <nav class="gray-line hide-mobile">
             <ul class="first-menu">
               <a href="">
                 <li>
@@ -36,7 +69,7 @@
               </a>  
             </ul>
         </nav>
-        <nav class="menu">
+        <nav class="menu hide-mobile">
             <div class="js-logo">
                 <a href="index.html">
                   <img src="Images/js-logo.png" alt="logo">
@@ -99,6 +132,13 @@
             </div>
         </section>
     </main>
+    <footer>
+      <img src="Images/logo-jsnation.svg">
+      <div class="rights">
+        <p>2021 The biggest JavaScript conference in the cloud.</p>
+        <p>This project was made by Ivan Linares.</p>
+      </div>
+    </footer>
  </div>
     <script src="script.js"></script>
 </body>
