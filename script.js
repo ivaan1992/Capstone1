@@ -15,7 +15,7 @@ function toggleMenu() {
 
 hamburger.addEventListener('click', toggleMenu);
 
-// Speakers
+/*// Speakers
 const featuredSpeakers = document.getElementById('speakers');
 const Speakers = [
     {
@@ -58,6 +58,7 @@ const Speakers = [
 
 Speakers.forEach((item) => {
     featuredSpeakers.innerHTML += `
+
     <div class="speakerss">
         <img src="${item.image}"
     </div>     
@@ -66,6 +67,19 @@ Speakers.forEach((item) => {
         <p class="italik-red">${item.company}</p>
         <p class="about">${item.bio}</p>
     </div>    
-    
 `;
-})
+});*/
+
+showMore.addEventListener('click', (e) => {
+    e.preventDefault();
+    const speakersContainer = document.querySelector('.speakers .card-container');
+    if(!showMore.classList.contains('less')) {
+        showMore.classList.add('less');
+        speakersContainer.style.maxHeight = 'unset';
+        showMore.innerText = 'Show Less';
+      } else {
+        showMore.classList.remove('less');
+        speakersContainer.style = '';
+        showMore.innerText = 'Show More';
+    }
+});

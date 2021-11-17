@@ -145,7 +145,7 @@
     linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
     background-color: #131313;
     background-size: 20px 20px;
-    height: 120vh;
+    height: 132vh;
   }
   
   .program-title-section {
@@ -181,8 +181,8 @@
     width: 100%;
     height: 20vh;
     margin-bottom: 20px;
-    margin-left: 26px;
-    margin-right: 26px;
+    margin-left: 56px;
+    margin-right: 56px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -198,14 +198,16 @@
   .card-title {
     color: #ec5242;
     font-weight: 900;
-    margin-right: 20px;
   }
   
   .card-info {
-    width: 80%;
+    width: 50%;
     text-align: justify;
     font-size: 12px;
     font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 
   .ticket {
@@ -225,7 +227,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    margin-top: 100%;
+    margin-top: 600px;
   }
 
   .section-title {
@@ -248,16 +250,20 @@
     margin-left: 20px;
   }
 
-  .speakerss {
+  .speaker-info {
     display: flex;
-    border: 3px solid red;
+    margin-bottom: 30px;
   }
 
-  .speakerss img {
+  .speaker-info img {
     width: 23vh;
     height: 23vh;
   }
 
+  .speakers .card-container {
+    max-height: 19rem;
+    overflow: hidden;
+  }
   .speaker-name {
     font-size: 20px;
     margin-bottom: 10px;
@@ -276,6 +282,14 @@
     text-align: justify;
     width: 80%;
     height: 25vh;
+  }
+
+  .see-more button {
+    width: 100%;
+    height: 100vh;
+    margin-left: 16px;
+    margin-right: 16px;
+    background: #fff;
   }
 }
 
@@ -350,7 +364,7 @@
     font-weight: bold;
   }
   
-  .red li {
+  .red li{
     width: 150px;  
     height: 8vh;
     border: 6px solid #ec5242;
@@ -361,6 +375,12 @@
     align-items: center;
     justify-content: center;
     list-style-type: none;
+  }
+
+  .red li:hover {
+    color: #272a31;
+    font-weight: 900;
+    border: 6px solid #272a31;
   }
   
   .js-logo { 
@@ -518,7 +538,6 @@
      grid-template-columns: repeat(2,30%);
      justify-content: center;
      margin-top: 80px;
-     height: 100vh;
    }
 
    .section-title {
@@ -534,17 +553,17 @@
      margin-left: 48%;
    } 
 
-   .speakers-info {
+   .speaker-info {
+     display: flex;
+   }
+
+   .bio {
      display: flex;
      flex-direction: column;
-     margin-left: 20px;
+     margin-left: 13px;
    }
 
-   .speakerss {
-     display: flex;
-   }
-
-   .speakerss img {
+   .speaker-info img {
      width: 23vh;
      height: 23vh;
    }
@@ -569,6 +588,11 @@
      height: 25vh;
    }
 
+   .see-more {
+     width: 20%;
+     height: 10vh;
+   }
+  
    .partner {
      width: 100%;
      background-color: #414246;
