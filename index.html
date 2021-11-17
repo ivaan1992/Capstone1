@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-index.css" /> 
+    <title>Capstone</title>
+</head>
+<body>
+ <div class="content">
+    <header>
+        <nav class="hamburger-menu hide-desktop">
+            <button class="mobile-menu-button">
+              <img src="Images/hamburger-menu.svg" alt="mobile-menu">
+            </button>
+            <nav class="cont-menu hide-desktop"> 
+              <ul>
+                  <a href="index.html">
+                      <li>Home</li>
+                  </a>
+                  <a href="about.html">
+                      <li>About</li>
+                  </a>
+                  <a href="">
+                    <li>Program</li>
+                  </a>
+                  <a href="">  
+                    <li>Join</li>
+                  </a>  
+                  <a href="">
+                    <li>Sponsor</li>
+                  </a>
+                  <a href="" class="news">
+                    <li>News</li>
+                  </a>
+                  <a href="">
+                    <li>CC Campaign</li>
+                  </a>    
+              </ul>
+              <a href="" class="xIcon">
+                  <span>X</span>
+              </a>  
+            </nav>
+        </nav> 
+        
+        <nav class="gray-line hide-mobile">
+            <ul class="first-menu">
+              <a href="">
+                <li>
+                    <img src="Images/facebook.png" alt="logo">
+                </li>
+              </a>
+              <a href="">
+                <li>
+                    <img src="Images/twitter.png" alt="logo">
+                </li>
+              </a> 
+              <a href="">
+                <li>English</li>
+              </a> 
+              <a href="">
+                <li>My Page</li>
+              </a>  
+              <a href="">  
+                <li>Logout</li>
+              </a>  
+            </ul>
+        </nav>
+        <nav class="menu hide-mobile">
+            <div class="js-logo">
+                <a href="index.html">
+                  <img src="Images/js-logo.png" alt="logo">
+                </a>
+            </div>    
+            <ul class="second-menu">
+                <a href="about.html">
+                  <li>About</li>
+                </a>
+                <a href="">
+                  <li>Program</li>
+                </a>
+                <a href="">  
+                  <li>Join</li>
+                </a>  
+                <a href="">
+                  <li>Sponsor</li>
+                </a>
+                <a href="" class="news">
+                  <li>News</li>
+                </a>
+                <a href="" class="red">
+                  <li>CC Campaign</li>
+                </a>    
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="headline hide-mobile">
+            <div class="text">
+              <p class="title">International JavaScript conference</p>
+              <h1 class="coco">Global Conference Series for Fullstack JS Development 2021</h1>
+              <p class="info">Discover the future of the JavaScript development ecosystem 
+                  and get connected to its stellar crowd! Attend JSNation Live, 
+                  a 3-day conference on all things JS, gathering international software 
+                  engineers in the cloud. 
+                  To help you stay up-to-date on the latest JavaScript technologies, 
+                  we're coming back with our new remote gig</p>
+              <p class="year">2021.06.09(Wed) ~ 11(Fri)</p>  
+              <p class="user">@thejsnation</p>
+            </div>  
+            <div class="background"></div>  
+        </section>
+        <section class="program hide-mobile">
+            <h2 class="program-title-section">Main Program</h2>
+            <div class="red-line"></div>
+             <div class="card-content">    
+                       <div class="cards">
+                         <img src="Images/security.png" alt="logo">  
+                         <h4 class="card-title">SECURITY</h4>
+                         <p class="card-info">
+                            JavaScript security analyzers are JavaScript 
+                            security tools that perform code analysis on client-side 
+                            applications.
+                         </p>
+                       </div>
+                       <div class="cards">
+                        <img src="Images/climb.png" alt="logo">  
+                           <h4 class="card-title">FROM JUNIOR TO SENIOR</h4>
+                           <p class="card-info">
+                            Learning, training, getting a promotion, 
+                            upgrading working conditions… all of them mark our 
+                            professional development.
+                           </p>
+                       </div>
+                       <div class="cards">
+                         <img src="Images/uxui.png" alt="logo">    
+                         <h4 class="card-title">UX/UI</h4>
+                         <p class="card-info">
+                            An overview of Information Architecture and techniques you can 
+                            use to design content that effectively conveys meaning to users within the 
+                            context of their experience.
+                         </p>
+                       </div>
+                       <div class="cards">
+                        <img src="Images/fullstack.png" alt="logo">     
+                        <h4 class="card-title">FULL-STACK APP DEVELOPMENT</h4>
+                        <p class="card-info">
+                            It refers to the development of both front end (client side) 
+                            and back end (server side) portions of web application.
+                        </p>
+                      </div> 
+                    </div>  
+                    <a href="" class="link-program hide-mobile">
+                        SEE THE WHOLE PROGRAM
+                    </a>   
+                    <button class="ticket hide-desktop" type="button">Get your tickets here</button>  
+             </div>  
+                   
+        </section>
+        <h2 class="section-title">Featured Speakers</h2>
+        <div class="redLine"></div>
+        <div id="speakers" class="speakers"></div>
+        
+      <!--section class="speakers hide-mobile">
+            <div class="speaker-info">  
+                    <img src="Images/speaker1.jpg" alt="">
+                  <div class="bio">
+                    <h3 class="speaker-name">Nico Krüger</h3>
+                    <p class="italik-red">Rollbar, USA</p>
+                    <p class="about">Nico is the Senior Director of Solutions Engineering at Rollbar. 
+                      He has spent over 13 years working with companies around the world to improve 
+                      their software development lifecycle focused on quality critical applications. 
+                    </p>
+                  </div>
+            </div>
+              <div class="speaker-info">
+                  <img src="Images/speaker2.jpg" alt="">
+                <div class="bio">
+                  <h3 class="speaker-name">Jason Lengstorf</h3>
+                  <p class="italik-red">Netlify, USA</p>
+                  <p class="about">Jason Lengstorf works at Netlify and hosts Learn With Jason. 
+                    He spends a lot of time telling people that the formula for success and happiness 
+                    is to lift each other up and share what we learn. 
+                  </p>
+                </div>
+              </div>
+          <div class="speaker-info">
+                  <img src="Images/speaker3.jpg" alt=""> 
+              <div class="bio">
+                <h3 class="speaker-name">Maggie Johnson-Pint</h3>
+                <p class="italik-red">Netlify, USA</p>
+                <p class="about">Maggie is an open-source community advocate who works on the Azure SDK 
+                  team at Microsoft to ensure every developer on every platform has an incredible 
+                  experience with the cloud. JavaScript is her first love, especially date, and time problems.</p>
+              </div>
+          </div>
+        <div class="speaker-info">
+              <img src="Images/speaker4.jpg" alt="">
+            <div class="bio">
+              <h3 class="speaker-name">Will Johnston</h3>
+              <p class="italik-red">WP Engine, USA</p>
+              <p class="about">Will Johnston is a Developer Advocate on the DevRel team at WP Engine. 
+                He started coding when he was 10 years old, and began coding professionally at 15. 
+                He got his start working on an open source competency tracking tool for schools with Python and Zope. 
+                </p>
+            </div>
+        </div>
+        <div class="speaker-info">
+              <img src="Images/speaker5.jpg" alt="">
+            <div class="bio">
+              <h3 class="speaker-name">Fabrizio Picca</h3>
+              <p class="italik-red">Commercelayer, Italy</p>
+              <p class="about">Java developer, Software Architect and Enterprise Commerce Expert. 
+                Dad of one soon to be two, loves music, photography, cooking and running.</p>
+            </div>
+        </div>
+        <div class="speaker-info">
+              <img src="Images/speaker6.jpg" alt=""> 
+            <div class="bio">
+              <h3 class="speaker-name">Vasilika Klimova</h3>
+              <p class="italik-red">Avaloq, Luxembourg</p>
+              <p class="about">Frontend developer at Avaloq. Founder of the SkillUp school in Luxembourg. 
+                Teacher, speaker, rescue diver, mother of a ginger cat. 
+                Loves beautiful visual effects on websites, responsive markup, video games and travel.</p>
+            </div>
+        </div>      
+        <button type="button" class="see-more hide-desktop">MORE </button>
+      </section-->
+      <section class="partner hide-mobile">
+          <h2 class="partner-title">Partner</h2>
+          <div class="Line"></div>
+          <div class="logos">
+            <img src="Images/google.png">
+            <img src="Images/js.png">
+            <img src="Images/node.png">
+            <img src="Images/react.png">
+          </div>
+      </section>
+    </main>
+    <footer>
+      <img src="Images/logo-jsnation.svg">
+      <div class="rights">
+        <p>2021 The biggest JavaScript conference in the cloud.</p>
+        <p>This project was made by Ivan Linares.</p>
+      </div>
+    </footer>
+ </div>    
+  <script src="script.js"></script>
+</body>
+</html>
