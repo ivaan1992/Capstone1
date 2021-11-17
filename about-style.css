@@ -1,19 +1,25 @@
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
 @font-face {
   font-family: Cocogoose;
   src: url(COCOGOOSE/Cocogoose_trial.otf);
-  }
-  
-/*Desktop Version*/
-@media(min-width:1025px) {
+}
+
+/* Desktop Version */
+@media (min-width: 1025px) {
   .hide-desktop {
     display: none;
+  }
+
+  footer img {
+    width: 300px;
+    height: 10vh;
+    margin-right: 25px;
   }
 
   .gray-line {
@@ -23,11 +29,11 @@
     justify-content: flex-end;
     align-items: center;
   }
-  
+
   .gray-line img {
     width: 25px;
   }
-  
+
   .first-menu {
     display: flex;
     list-style-type: none;
@@ -35,32 +41,14 @@
     align-items: center;
     padding-right: 16%;
   }
-  
+
   .first-menu a {
     margin-right: 30px;
     text-decoration: none;
     color: #fff;
     font-size: 18px;
   }
-  
-  .first-menu a:hover {
-    font-weight: bold;
-  }
-  
-  .menu {
-    display: flex;
-    height: 10vh;
-    padding-right: 17%;
-    border-bottom: 1px solid #d3d3d3;
-  }
-  
-  .second-menu {
-    width: 100%;
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-  }
-  
+
   .second-menu a {
     width: 30%;
     display: flex;
@@ -70,14 +58,32 @@
     font-weight: 500;
     font-size: 18px;
   }
-  
+
+  .first-menu a:hover {
+    font-weight: bold;
+  }
+
+  .menu {
+    display: flex;
+    height: 10vh;
+    padding-right: 17%;
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .second-menu {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+
   .second-menu a:hover {
     color: #ec5242;
     font-weight: bold;
   }
-  
+
   .red li {
-    width: 150px;  
+    width: 150px;
     height: 8vh;
     border: 6px solid #ec5242;
     color: #ec5242;
@@ -94,15 +100,15 @@
     font-weight: 900;
     border: 6px solid #272a31;
   }
-  
-  .js-logo { 
+
+  .js-logo {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 7vh;
     padding-top: 10px;
   }
-  
+
   .js-logo img {
     width: 100%;
     height: 7vh;
@@ -136,7 +142,7 @@
   }
 
   .coco {
-    font-family: Cocogoose;
+    font-family: Cocogoose, sans-serif;
     color: #ec5242;
     font-weight: 900;
     font-size: 55px;
@@ -147,7 +153,7 @@
 
   .info {
     width: 58%;
-    border: 1px solid ;
+    border: 1px solid;
     line-height: 25px;
     background: #fff;
     margin-bottom: 20px;
@@ -217,7 +223,7 @@
     height: 300px;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0px 15px 25px;
+    box-shadow: 0 15px 25px;
     cursor: pointer;
     margin-right: 20px;
   }
@@ -281,12 +287,6 @@
     align-items: center;
   }
 
-  footer img {
-    width: 300px;
-    height: 10vh;
-    margin-right: 25px;
-  }
-
   .rights {
     display: flex;
     flex-direction: column;
@@ -303,8 +303,8 @@
   }
 }
 
-/*Mobile Version*/
-@media(max-width: 1024px) {
+/* Mobile Version */
+@media (max-width: 1024px) {
   .hide-mobile {
     display: none;
   }
@@ -315,6 +315,11 @@
 
   .hamburger-menu {
     width: 100%;
+  }
+
+  footer img {
+    width: 300px;
+    height: 10vh;
   }
 
   .mobile-menu-button {
@@ -354,12 +359,14 @@
     transform: translateY(0%);
   }
 
-  .cont-menu ul, li, a {
+  .cont-menu ul,
+  li,
+  a {
     list-style-type: none;
     text-decoration: none;
     line-height: 35px;
     color: #ec5242;
-    font-family: Cocogoose;
+    font-family: Cocogoose, sans-serif;
     font-weight: 900;
     font-size: 30px;
     margin-top: 13%;
@@ -371,14 +378,14 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .background {
     background-image: url("Images/conference.jpeg");
     background-size: 100%;
     height: 100vh;
     opacity: 0.2;
   }
-  
+
   .principal-text {
     width: auto;
     position: absolute;
@@ -387,25 +394,25 @@
     margin-left: 16px;
     margin-right: 16px;
   }
-  
+
   .title {
     color: #ec5242;
     font-weight: 600;
     font-size: 20px;
     margin-bottom: 15px;
   }
-  
+
   .coco {
-    font-family: Cocogoose;
+    font-family: Cocogoose, sans-serif;
     color: #ec5242;
     font-weight: 900;
     font-size: 50px;
     margin-bottom: 20px;
   }
-  
+
   .info {
     width: auto;
-    border: 1px solid ;
+    border: 1px solid;
     line-height: 25px;
     background: #f7f7f7;
     margin-bottom: 20px;
@@ -475,7 +482,7 @@
     height: 300px;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0px 15px 25px;
+    box-shadow: 0 15px 25px;
     cursor: pointer;
     margin-right: 20px;
     margin-bottom: 30px;
@@ -530,11 +537,6 @@
     align-items: center;
   }
 
-  footer img {
-    width: 300px;
-    height: 10vh;
-  }
-
   .rights {
     display: flex;
     flex-direction: column;
@@ -549,5 +551,4 @@
     color: #272a31;
     font-weight: 700;
   }
-
 }
